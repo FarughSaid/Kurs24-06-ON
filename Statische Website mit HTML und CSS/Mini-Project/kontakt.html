@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <center><h1>Kontaktieren Sie uns</h1></center>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="startseite.html">Startseite</a></li>
+            <li><a href="ueber-uns.html">Über Uns</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Kontakt</h1>
+        <p>Wir freuen uns, von Ihnen zu hören! Nutzen Sie das untenstehende Formular oder 
+            kontaktieren Sie uns direkt per E-Mail oder Telefon.</p>
+        <h1>Kontaktdaten</h1>
+        <p>Adresse: Musterstraße 123, 12345 Musterstadt
+
+            Telefon: +49123456789
+            
+            E-Mail: info@meinewebseite.de
+            </p>
+        <h2>Schreiben Sie uns</h2>
+    
+    <form action="/senden" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+        
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required>
+        
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht" rows="5" required></textarea>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Meine Website. Alle Rechte vorbehalten!</p>
+    </footer>
+
+</body>
+</html>
