@@ -1,0 +1,175 @@
+head {
+    background-color: hsl(315, 83%, 21%); /* Ein helles Blau als Grundfarbe */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #870872; /* Dunkles Blau */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    color: #060606; /* Kräftiges Orange für die Überschrift */
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #080808;
+    text-align: center;
+}
+
+p {
+    font-size: 28px;
+    color: #151515;
+    text-align: center;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 250px; /* Set a default width for images */
+    border: 3px solid #151515; /* Rahmen um das Bild */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(107, 21, 98, 0.5); /* Add shadow on hover */
+}
+
+/* Div Styling */
+div {
+    background-color: #e158cf; /* Helles Rot für den Hintergrund */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+#1 {    background-color:aquamarine;
+
+}
+.product-image {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: space-between; /* Abstand zwischen den Boxen */
+}
+
+div:hover {
+    background-color: #631963; /* Darker shade on hover */
+}
+
+/* List Styling */
+ul {
+    color: #0e0e0e; /* Farbe der Listenpunkte und des Textes */
+    list-style-type: square; /* Ändert die Aufzählungszeichen in Quadrate */
+    padding-left: 20px; /* Abstand zwischen Liste und Text */
+}
+
+ul li {
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+}
+
+/* Extra Section */
+.extra-section {
+    background-color: #f0e68c; /* Helles Gelb */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'ArialBlack', serif; /* Andere Schriftart */
+}
+
+.extra-section h2 {
+    color: #008080; /* Türkis */
+    text-align: center;
+}
+
+.extra-section p {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
+
+.extra-section img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Buy Section */
+.buy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #4a0e4b;
+    border: 2px solid #0f0f0f;
+    border-radius: 8px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+/* Heading Style */
+.buy-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e64aa7;
+}
+
+/* Price Style */
+.buy-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e64aa7;
+}
+
+/* Buy Button */
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #151615;
+    color: rgb(223, 111, 216);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button i {
+    margin-right: 10px;
+}
+
+.buy-button:hover {
+    background-color: #530d34; /* Change background color on hover */
+}
+
+/* Flexbox for Image Gallery */
+.image-gallery {
+    display: flex; /* Use Flexbox to arrange images in a row */
+    justify-content: center; /* Center the images horizontally */
+    gap: 15px; /* Space between images */
+}
+
+.image-gallery img {
+    width: 170px; /* Set a fixed width for the images */
+    height: auto; /* Maintain the aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.image-gallery img:hover {
+    opacity: 0.8; /* Change the opacity on hover */
+}
