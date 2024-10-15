@@ -1,7 +1,7 @@
 :root {
     /* Custom Variables */
     --font-family: 'Arial', sans-serif;
-    --base-font-size: 20px;
+    --base-font-size: 15px;
     --background-color: hsl(60, 8%, 93%);
     --text-color: #151515;
     --link-color: rgb(241, 241, 12);
