@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Aufgaben</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(166, 166, 171);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aufgabe 1 -->
+    <h2 id="willkommen">Willkommen</h2>
+
+    <!-- Aufgabe 2 -->
+    <button id="farbeBtn">Ändere Farbe</button>
+
+    <!-- Aufgabe 3 -->
+    <ul id="fruchtListe">
+        <li>Apfel</li>
+        <li>Banane</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- Aufgabe 4 -->
+    <div id="container"></div>
+
+    <!-- Aufgabe 5 -->
+    <button id="klickBtn">Klick mich</button>
+
+    <!-- Aufgabe 6 -->
+    <div class="box"></div>
+
+    <!-- Aufgabe 7 -->
+    <input type="text" id="eingabeText">
+    <button id="absendenBtn">Absenden</button>
+    <div id="ausgabe"></div>
+
+    <!-- Aufgabe 8 -->
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <!-- Aufgabe 9 -->
+    <ul id="liste">
+        <li id="item1">Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- Aufgabe 10 -->
+    <input type="number" id="benutzerZahl" min="1" max="10">
+    <button id="ueberpruefenBtn">Überprüfen</button>
+    <p id="ergebnis"></p>
+
+    <script>
+        // Aufgabe 1: Textelement auswählen und ändern
+        document.getElementById("willkommen").textContent = "Herzlich Willkommen!";
+
+        // Aufgabe 2: Stile ändern
+        function zufaelligeFarbe() {
+            const zufallsFarbe = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            return zufallsFarbe;
+        }
+
+        document.getElementById("farbeBtn").addEventListener("click", function() {
+            this.style.backgroundColor = zufaelligeFarbe();
+        });
+
+        // Aufgabe 3: Liste von Elementen erstellen
+        let items = document.getElementsByTagName("li");
+        items[1].textContent = "Mango";
+
+        // Aufgabe 4: Dynamisch ein Element hinzufügen
+        let neuerAbsatz = document.createElement("p");
+        neuerAbsatz.textContent = "Dies ist ein neuer Absatz";
+        document.getElementById("container").appendChild(neuerAbsatz);
+
+        // Aufgabe 5: Element mit einem Event Listener versehen
+        document.getElementById("klickBtn").addEventListener("click", function() {
+            let p = document.createElement("p");
+            p.textContent = "Button wurde geklickt!";
+            document.body.appendChild(p);
+        });
+
+        // Aufgabe 6: Interaktive Farbänderung
+        let box = document.querySelector(".box");
+        box.addEventListener("mouseover", function() {
+            this.style.backgroundColor = "green";
+        });
+
+        box.addEventListener("mouseout", function() {
+            this.style.backgroundColor = "lightgrey";
+        });
+
+        // Aufgabe 7: Eingabewert auslesen und anzeigen
+        document.getElementById("absendenBtn").addEventListener("click", function() {
+            let inputWert = document.getElementById("eingabeText").value;
+            let p = document.createElement("p");
+            p.textContent = inputWert;
+            document.getElementById("ausgabe").appendChild(p);
+        });
+
+        // Aufgabe 8: Elemente anhand von Klasse auswählen und manipulieren
+        let boxen = document.getElementsByClassName("box");
+        for (let i = 0; i < boxen.length; i++) {
+            boxen[i].addEventListener("click", function() {
+                for (let j = 0; j < boxen.length; j++) {
+                    boxen[j].style.backgroundColor = "blue";
+                }
+            });
+        }
+
+        // Aufgabe 9: Neues Element vor einem bestehenden hinzufügen
+        let ul = document.getElementById("liste");
+        let neuesItem = document.createElement("li");
+        neuesItem.textContent = "Neues Item";
+        ul.insertBefore(neuesItem, document.getElementById("item1"));
+
+        // Aufgabe 10: Mini-Game: Zufällige Zahlen vergleichen
+        document.getElementById("ueberpruefenBtn").addEventListener("click", function() {
+            let benutzerZahl = parseInt(document.getElementById("benutzerZahl").value);
+            let zufallsZahl = Math.floor(Math.random() * 10) + 1;
+
+            let ergebnisText = (benutzerZahl === zufallsZahl)
+                ? "Richtig geraten!"
+                : `Falsch geraten! Die Zahl war ${zufallsZahl}`;
+
+            document.getElementById("ergebnis").textContent = ergebnisText;
+        });
+    </script>
+
+</body>
+</html>
