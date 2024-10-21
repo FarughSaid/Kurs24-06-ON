@@ -1,0 +1,30 @@
+h1 {
+    color: blue;
+    text-align: center;
+  }
+  
+  h2 {
+    color: green;
+    text-align: center;
+  }
+  
+  h3 {
+    color: red;
+    text-align: center;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkorange;
+  }
+  
