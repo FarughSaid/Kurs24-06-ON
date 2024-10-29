@@ -1,0 +1,16 @@
+{
+    "name": "file-operations-proje",
+    "version": "1.0.0",
+    "description": "Node.js project for writing and appending to files",
+    "main": "asyncWrite.js",
+    "scripts": {
+      "start": "node asyncWrite.js",
+      "start-sync": "node syncWrite.js"
+    },
+    "dependencies": {
+      "readline-sync": "^1.4.10"
+    },
+    "author": "Farugh Said",
+    "license": "ISC"
+  }
+  

@@ -1,0 +1,110 @@
+body {
+    background-color: #ffe6e6; /* Ein helles Blau als Grundfarbe */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+color: #7300ff; /* Kräftiges Orange für die Überschrift */
+text-align: center;
+}
+p {
+font-size: 18px;
+color: #333333;
+text-align: center;
+}
+img {
+display: block;
+margin: 20px auto;
+width: 250px;
+border: 3px solid #ff4500; /* Rahmen um das Bild */
+border-radius: 10px;
+}
+div {
+background-color: #ffcbcb; /* Helles Rot für den Hintergrund */
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+/* Stilregel für die Liste */
+ul {
+    color: #ff4500; /* Farbe der Listenpunkte und des Textes */
+    list-style-type: square; /* Ändert die Aufzählungszeichen in Quadrate */
+    padding-left: 20px; /* Abstand zwischen Liste und Text */
+}
+
+ul li {
+    margin-bottom: 10px; /* Abstand zwischen den Listenelementen */
+}
+
+body {
+    background-color: #e6f7ff; /* Helles Blau */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff4500; /* Orange */
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #0a0403;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    border: 3px solid #cb530d;
+    border-radius: 20px;
+}
+
+div {
+    background-color: #370eee; /* Helles Rot */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Stil für die Liste */
+ul {
+    color: #ff4500;
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Neuer Abschnitt */
+.extra-section {
+    background-color: #f0e68c; /* Helles Gelb */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Georgia', serif; /* Andere Schriftart */
+}
+
+.extra-section h2 {
+    color: #008080; /* Türkis */
+    text-align: center;
+}
+
+.extra-section p {
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
+
+.extra-section img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+

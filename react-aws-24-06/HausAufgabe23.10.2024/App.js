@@ -6,6 +6,7 @@ function App() {
 
   const handleTextChange = (e) => {
     setText(e.target.value);
+    
   };
 
   return (

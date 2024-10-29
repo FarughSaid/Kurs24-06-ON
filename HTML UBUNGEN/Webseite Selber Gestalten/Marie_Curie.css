@@ -1,0 +1,19 @@
+background-image: url('Marie-Curie.jpg');
+body {
+    background-image: url('Marie-Curie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Set text color for better readability */
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}

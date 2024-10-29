@@ -1,0 +1,9 @@
+.custom-text-field {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #e40606;
+    width: 100%;
+    max-width: 300px;
+  }
+  

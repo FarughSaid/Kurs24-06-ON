@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "HTML UBUNGEN",
+			"path": ".."
+		},
+		{
+			"name": "HausAufg30092024",
+			"path": "../../HausAufg30092024"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML UBUNGEN"
+	}
+}
