@@ -1,0 +1,8 @@
+{
+  "name": "your-package-name",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "cat-facts": "^1.0.2"
+  }
+}
